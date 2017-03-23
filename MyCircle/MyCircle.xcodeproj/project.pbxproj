@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C15A54871E8371FC00DB5D5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15A54861E8371FC00DB5D5C /* AppDelegate.swift */; };
+		C15A54891E8371FC00DB5D5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15A54881E8371FC00DB5D5C /* ViewController.swift */; };
+		C15A548C1E8371FC00DB5D5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C15A548A1E8371FC00DB5D5C /* Main.storyboard */; };
+		C15A548F1E8371FC00DB5D5C /* MyCircle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C15A548D1E8371FC00DB5D5C /* MyCircle.xcdatamodeld */; };
+		C15A54911E8371FC00DB5D5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C15A54901E8371FC00DB5D5C /* Assets.xcassets */; };
+		C15A54941E8371FC00DB5D5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C15A54921E8371FC00DB5D5C /* LaunchScreen.storyboard */; };
+		C15A549F1E8371FC00DB5D5C /* MyCircleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15A549E1E8371FC00DB5D5C /* MyCircleTests.swift */; };
+		C15A54AA1E8371FC00DB5D5C /* MyCircleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15A54A91E8371FC00DB5D5C /* MyCircleUITests.swift */; };
+		C15A54BE1E8393DA00DB5D5C /* CircleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15A54BC1E8393DA00DB5D5C /* CircleViewCell.swift */; };
+		C15A54BF1E8393DA00DB5D5C /* CircleViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C15A54BD1E8393DA00DB5D5C /* CircleViewCell.xib */; };
+		C15A54C21E83961D00DB5D5C /* CircleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15A54C11E83961D00DB5D5C /* CircleViewModel.swift */; };
+		C15A54C41E83963700DB5D5C /* CircleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15A54C31E83963700DB5D5C /* CircleModel.swift */; };
+		C15A54C61E8396D900DB5D5C /* CircleTalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15A54C51E8396D900DB5D5C /* CircleTalkViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C15A549B1E8371FC00DB5D5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C15A547B1E8371FC00DB5D5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C15A54821E8371FC00DB5D5C;
+			remoteInfo = MyCircle;
+		};
+		C15A54A61E8371FC00DB5D5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C15A547B1E8371FC00DB5D5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C15A54821E8371FC00DB5D5C;
+			remoteInfo = MyCircle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C15A54831E8371FC00DB5D5C /* MyCircle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCircle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C15A54861E8371FC00DB5D5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C15A54881E8371FC00DB5D5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
+		C15A548B1E8371FC00DB5D5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C15A548E1E8371FC00DB5D5C /* MyCircle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyCircle.xcdatamodel; sourceTree = "<group>"; };
+		C15A54901E8371FC00DB5D5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C15A54931E8371FC00DB5D5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C15A54951E8371FC00DB5D5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C15A549A1E8371FC00DB5D5C /* MyCircleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCircleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C15A549E1E8371FC00DB5D5C /* MyCircleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCircleTests.swift; sourceTree = "<group>"; };
+		C15A54A01E8371FC00DB5D5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C15A54A51E8371FC00DB5D5C /* MyCircleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCircleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C15A54A91E8371FC00DB5D5C /* MyCircleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCircleUITests.swift; sourceTree = "<group>"; };
+		C15A54AB1E8371FC00DB5D5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C15A54BC1E8393DA00DB5D5C /* CircleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleViewCell.swift; sourceTree = "<group>"; };
+		C15A54BD1E8393DA00DB5D5C /* CircleViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CircleViewCell.xib; sourceTree = "<group>"; };
+		C15A54C11E83961D00DB5D5C /* CircleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleViewModel.swift; sourceTree = "<group>"; };
+		C15A54C31E83963700DB5D5C /* CircleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleModel.swift; sourceTree = "<group>"; };
+		C15A54C51E8396D900DB5D5C /* CircleTalkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleTalkViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C15A54801E8371FC00DB5D5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C15A54971E8371FC00DB5D5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C15A54A21E8371FC00DB5D5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C15A547A1E8371FC00DB5D5C = {
+			isa = PBXGroup;
+			children = (
+				C15A54851E8371FC00DB5D5C /* MyCircle */,
+				C15A549D1E8371FC00DB5D5C /* MyCircleTests */,
+				C15A54A81E8371FC00DB5D5C /* MyCircleUITests */,
+				C15A54841E8371FC00DB5D5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C15A54841E8371FC00DB5D5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C15A54831E8371FC00DB5D5C /* MyCircle.app */,
+				C15A549A1E8371FC00DB5D5C /* MyCircleTests.xctest */,
+				C15A54A51E8371FC00DB5D5C /* MyCircleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C15A54851E8371FC00DB5D5C /* MyCircle */ = {
+			isa = PBXGroup;
+			children = (
+				C15A54B71E83721500DB5D5C /* Classes */,
+				C15A54861E8371FC00DB5D5C /* AppDelegate.swift */,
+				C15A548A1E8371FC00DB5D5C /* Main.storyboard */,
+				C15A54901E8371FC00DB5D5C /* Assets.xcassets */,
+				C15A54921E8371FC00DB5D5C /* LaunchScreen.storyboard */,
+				C15A54951E8371FC00DB5D5C /* Info.plist */,
+				C15A548D1E8371FC00DB5D5C /* MyCircle.xcdatamodeld */,
+			);
+			path = MyCircle;
+			sourceTree = "<group>";
+		};
+		C15A549D1E8371FC00DB5D5C /* MyCircleTests */ = {
+			isa = PBXGroup;
+			children = (
+				C15A549E1E8371FC00DB5D5C /* MyCircleTests.swift */,
+				C15A54A01E8371FC00DB5D5C /* Info.plist */,
+			);
+			path = MyCircleTests;
+			sourceTree = "<group>";
+		};
+		C15A54A81E8371FC00DB5D5C /* MyCircleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C15A54A91E8371FC00DB5D5C /* MyCircleUITests.swift */,
+				C15A54AB1E8371FC00DB5D5C /* Info.plist */,
+			);
+			path = MyCircleUITests;
+			sourceTree = "<group>";
+		};
+		C15A54B71E83721500DB5D5C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C15A54881E8371FC00DB5D5C /* ViewController.swift */,
+				C15A54B81E83725C00DB5D5C /* Timeline */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C15A54B81E83725C00DB5D5C /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				C15A54C01E83960400DB5D5C /* ViewModel */,
+				C15A54B91E83725C00DB5D5C /* Controller */,
+				C15A54BA1E83725D00DB5D5C /* Model */,
+				C15A54BB1E83725D00DB5D5C /* View */,
+			);
+			path = Timeline;
+			sourceTree = "<group>";
+		};
+		C15A54B91E83725C00DB5D5C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C15A54C51E8396D900DB5D5C /* CircleTalkViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C15A54BA1E83725D00DB5D5C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C15A54C31E83963700DB5D5C /* CircleModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C15A54BB1E83725D00DB5D5C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C15A54BC1E8393DA00DB5D5C /* CircleViewCell.swift */,
+				C15A54BD1E8393DA00DB5D5C /* CircleViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C15A54C01E83960400DB5D5C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C15A54C11E83961D00DB5D5C /* CircleViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C15A54821E8371FC00DB5D5C /* MyCircle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C15A54AE1E8371FC00DB5D5C /* Build configuration list for PBXNativeTarget "MyCircle" */;
+			buildPhases = (
+				C15A547F1E8371FC00DB5D5C /* Sources */,
+				C15A54801E8371FC00DB5D5C /* Frameworks */,
+				C15A54811E8371FC00DB5D5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyCircle;
+			productName = MyCircle;
+			productReference = C15A54831E8371FC00DB5D5C /* MyCircle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C15A54991E8371FC00DB5D5C /* MyCircleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C15A54B11E8371FC00DB5D5C /* Build configuration list for PBXNativeTarget "MyCircleTests" */;
+			buildPhases = (
+				C15A54961E8371FC00DB5D5C /* Sources */,
+				C15A54971E8371FC00DB5D5C /* Frameworks */,
+				C15A54981E8371FC00DB5D5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C15A549C1E8371FC00DB5D5C /* PBXTargetDependency */,
+			);
+			name = MyCircleTests;
+			productName = MyCircleTests;
+			productReference = C15A549A1E8371FC00DB5D5C /* MyCircleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C15A54A41E8371FC00DB5D5C /* MyCircleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C15A54B41E8371FC00DB5D5C /* Build configuration list for PBXNativeTarget "MyCircleUITests" */;
+			buildPhases = (
+				C15A54A11E8371FC00DB5D5C /* Sources */,
+				C15A54A21E8371FC00DB5D5C /* Frameworks */,
+				C15A54A31E8371FC00DB5D5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C15A54A71E8371FC00DB5D5C /* PBXTargetDependency */,
+			);
+			name = MyCircleUITests;
+			productName = MyCircleUITests;
+			productReference = C15A54A51E8371FC00DB5D5C /* MyCircleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C15A547B1E8371FC00DB5D5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = pxl;
+				TargetAttributes = {
+					C15A54821E8371FC00DB5D5C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = QD82P77WSG;
+						ProvisioningStyle = Automatic;
+					};
+					C15A54991E8371FC00DB5D5C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = QD82P77WSG;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C15A54821E8371FC00DB5D5C;
+					};
+					C15A54A41E8371FC00DB5D5C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = QD82P77WSG;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C15A54821E8371FC00DB5D5C;
+					};
+				};
+			};
+			buildConfigurationList = C15A547E1E8371FC00DB5D5C /* Build configuration list for PBXProject "MyCircle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C15A547A1E8371FC00DB5D5C;
+			productRefGroup = C15A54841E8371FC00DB5D5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C15A54821E8371FC00DB5D5C /* MyCircle */,
+				C15A54991E8371FC00DB5D5C /* MyCircleTests */,
+				C15A54A41E8371FC00DB5D5C /* MyCircleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C15A54811E8371FC00DB5D5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C15A54BF1E8393DA00DB5D5C /* CircleViewCell.xib in Resources */,
+				C15A54941E8371FC00DB5D5C /* LaunchScreen.storyboard in Resources */,
+				C15A54911E8371FC00DB5D5C /* Assets.xcassets in Resources */,
+				C15A548C1E8371FC00DB5D5C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C15A54981E8371FC00DB5D5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C15A54A31E8371FC00DB5D5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C15A547F1E8371FC00DB5D5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C15A54BE1E8393DA00DB5D5C /* CircleViewCell.swift in Sources */,
+				C15A548F1E8371FC00DB5D5C /* MyCircle.xcdatamodeld in Sources */,
+				C15A54891E8371FC00DB5D5C /* ViewController.swift in Sources */,
+				C15A54C41E83963700DB5D5C /* CircleModel.swift in Sources */,
+				C15A54C61E8396D900DB5D5C /* CircleTalkViewController.swift in Sources */,
+				C15A54871E8371FC00DB5D5C /* AppDelegate.swift in Sources */,
+				C15A54C21E83961D00DB5D5C /* CircleViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C15A54961E8371FC00DB5D5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C15A549F1E8371FC00DB5D5C /* MyCircleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C15A54A11E8371FC00DB5D5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C15A54AA1E8371FC00DB5D5C /* MyCircleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C15A549C1E8371FC00DB5D5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C15A54821E8371FC00DB5D5C /* MyCircle */;
+			targetProxy = C15A549B1E8371FC00DB5D5C /* PBXContainerItemProxy */;
+		};
+		C15A54A71E8371FC00DB5D5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C15A54821E8371FC00DB5D5C /* MyCircle */;
+			targetProxy = C15A54A61E8371FC00DB5D5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C15A548A1E8371FC00DB5D5C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C15A548B1E8371FC00DB5D5C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C15A54921E8371FC00DB5D5C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C15A54931E8371FC00DB5D5C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C15A54AC1E8371FC00DB5D5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C15A54AD1E8371FC00DB5D5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C15A54AF1E8371FC00DB5D5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QD82P77WSG;
+				INFOPLIST_FILE = MyCircle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rocfly.MyCircle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C15A54B01E8371FC00DB5D5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QD82P77WSG;
+				INFOPLIST_FILE = MyCircle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rocfly.MyCircle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C15A54B21E8371FC00DB5D5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = QD82P77WSG;
+				INFOPLIST_FILE = MyCircleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rocfly.MyCircleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyCircle.app/MyCircle";
+			};
+			name = Debug;
+		};
+		C15A54B31E8371FC00DB5D5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = QD82P77WSG;
+				INFOPLIST_FILE = MyCircleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rocfly.MyCircleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyCircle.app/MyCircle";
+			};
+			name = Release;
+		};
+		C15A54B51E8371FC00DB5D5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = QD82P77WSG;
+				INFOPLIST_FILE = MyCircleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rocfly.MyCircleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MyCircle;
+			};
+			name = Debug;
+		};
+		C15A54B61E8371FC00DB5D5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = QD82P77WSG;
+				INFOPLIST_FILE = MyCircleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rocfly.MyCircleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MyCircle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C15A547E1E8371FC00DB5D5C /* Build configuration list for PBXProject "MyCircle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C15A54AC1E8371FC00DB5D5C /* Debug */,
+				C15A54AD1E8371FC00DB5D5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C15A54AE1E8371FC00DB5D5C /* Build configuration list for PBXNativeTarget "MyCircle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C15A54AF1E8371FC00DB5D5C /* Debug */,
+				C15A54B01E8371FC00DB5D5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C15A54B11E8371FC00DB5D5C /* Build configuration list for PBXNativeTarget "MyCircleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C15A54B21E8371FC00DB5D5C /* Debug */,
+				C15A54B31E8371FC00DB5D5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C15A54B41E8371FC00DB5D5C /* Build configuration list for PBXNativeTarget "MyCircleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C15A54B51E8371FC00DB5D5C /* Debug */,
+				C15A54B61E8371FC00DB5D5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C15A548D1E8371FC00DB5D5C /* MyCircle.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C15A548E1E8371FC00DB5D5C /* MyCircle.xcdatamodel */,
+			);
+			currentVersion = C15A548E1E8371FC00DB5D5C /* MyCircle.xcdatamodel */;
+			path = MyCircle.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C15A547B1E8371FC00DB5D5C /* Project object */;
+}
